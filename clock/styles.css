@@ -1,0 +1,84 @@
+body
+{
+    
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    justify-content: center;
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;    
+    background-image: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+h3{
+    /* background-color: orange; */
+   font-size: 25px;
+    text-transform:uppercase;
+    letter-spacing:5px ;
+    margin-bottom: 20px;
+
+}
+
+.divisions
+{
+    display: flex;
+
+}
+.divisions div
+{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:cornflowerblue;
+    justify-content: center;
+}
+
+.divisions span
+{
+    display: flex;
+    margin: 5px;
+    width: 90px;
+    height:70px;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: .8;
+    font-size: 50px;
+    color:white;
+    text-shadow: 2px 2px 4px ;
+
+}
+.divisions .low
+{
+
+    /* background-color: yellow; */
+    font-size: 15px;
+    height: 30px;
+    letter-spacing: 3px;
+     
+}
+
+.divisions #ampm 
+{
+    position: relative;
+    top: 80px;
+    font-size: 10px;
+    background-color: palevioletred;
+    opacity: .7;
+    height: 40px;
+
+}
+#am
+{
+    font-size: 20px;
+    color:black;
+    opacity: 1;
+}
