@@ -1,0 +1,101 @@
+
+body
+{
+    display: flex;
+    background-color:yellow;
+    width: 100vw;
+    height:80vh;
+  flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: cursive;
+
+}
+
+.outerSquare
+{
+    margin: 0px ;
+    display:flex;
+    flex-direction: column;
+    height: 180px;
+    width: 350px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+   border-radius: 6px;
+   box-shadow:0px 4px 8px rgba(0,0,0,.6);
+   overflow: hidden;
+  
+}
+
+.outerSquare div
+{
+    margin-bottom: 10px;
+    width: 100%;
+    /* justify-content: center; */
+    text-align: center;
+   
+    letter-spacing: 1px;
+}
+
+.outerSquare input
+{
+     
+  padding:  10px 25px;
+    border: 2px dashed gray;
+    font-size: 18px;
+    text-align: center;
+    box-sizing:border-box;
+    
+
+}
+.question{
+    font-size: 18px;
+}
+.outerSquare button
+{
+    margin-top: 10px;
+        width:100%;
+        /* position: relative; */
+        /* left:5px; */
+        padding: 6px 0px;
+        font-size: large;
+        margin-bottom: 10px;
+        color: white;
+        background-color: green;
+        cursor: pointer;
+    }
+form{
+    width: 80%;
+}
+/*  */
+
+.score{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 15px;
+    padding-top: 5px ;
+    font-size: 13px;
+    top:5px;
+}
+
+
+.outerSquare input::placeholder
+{
+    text-align: center;
+    font-size: large;
+    opacity: .5;
+}
+
+.outerSquare button:hover
+{
+    filter: brightness(0.9);
+}
+
+
+/* ------------------------------------------------------------------------- */
+/*  timer css */
+.timer{
+    font-size: 50px;
+}
