@@ -1,0 +1,91 @@
+body{
+    /* margin: 0px; */
+   
+    background-color:#eee;
+    
+    font-family: cursive;
+ 
+}
+
+
+.serevices{
+    border:5px solid black;
+    width: 30%;
+    margin:5px;
+    float: left;
+    text-align: center;
+    
+}
+.outer{
+    margin-top: 15%;
+    padding: 10px;
+    background-color:white;
+
+}
+.outer::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+.below{
+    background-color: #ccc;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 40px;
+    text-align: justify;
+    -webkit-column-rule: 1px solid ;
+}
+
+.football{
+    position: relative;
+    
+}
+.football h4{
+    position:absolute;
+    top:0px;
+    right: 200px;
+}
+.football img
+{
+    width: 100%;
+    
+}
+
+nav{
+
+    position:fixed;
+    background-color: #333;
+    padding: 10px;
+    /* top: 0px; */
+  top:0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+
+   
+
+}
+
+nav ul{
+    list-style-type: none;
+    color:white; 
+    padding: 0px 45px;
+      
+}
+
+li{
+    float:right;
+    margin: 5px;
+    padding: 1px,5px;
+  
+
+   
+}
+
+nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
