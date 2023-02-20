@@ -119,6 +119,7 @@ img{
 .thankyou
 {
   inherits:true;
+  color: red;
   transform: scaleX(-1);
 }
 
