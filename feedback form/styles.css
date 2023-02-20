@@ -1,0 +1,160 @@
+
+body{
+    overflow: hidden;
+}
+
+.outer{
+
+
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    font-family: cursive;
+    
+   
+}
+
+.uh{
+ background-color: lightgoldenrodyellow;
+}
+.n{
+    background-color: white;
+}
+
+.h{
+    background-color:lightblue ;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+    padding-bottom: 15px;
+    border-radius: 7px;
+    box-shadow:0px 1px 7px rgba(0,0,0,.6);
+    background-color:rgba(200, 226, 235);
+    transition:  transform .5s linear;
+
+
+}
+
+.optinos
+{
+    display: flex;
+    padding:10px;
+   
+}
+
+img{
+    margin-top: 20px;
+    width: 40%;
+    
+}
+
+.icon{
+    padding-top: 5px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    transition: transform .1s linear;
+}
+
+
+
+.sad:hover 
+{
+ 
+    background-color: lightgoldenrodyellow;
+    /* transform: scaleY(-1); */
+
+    
+}
+.neutral:hover
+{
+   
+    background-color: rgb(228, 233, 232);
+    /* transform: scaleY(-1); */
+}
+.happy:hover
+{
+   
+    background-color: lightblue;
+
+}
+
+
+#btn{
+
+    color: white;
+    padding: 9px 15px;
+    background-color:grey;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn:hover
+{
+    background-color: darkcyan;
+    position: relative;
+    top:2px;
+}
+
+.slide{
+    transform:  translate(0,10%) 
+}
+.flip
+{
+    /* transform:  scaleX(-1);  */
+}
+
+.thankyou
+{
+  inherits:true;
+  transform: scaleX(-1);
+}
+
+.animation
+{
+    animation-name: sandy;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes sandy {
+  0% {  
+
+}
+
+25%
+{
+    scale: -1 1 1 ;
+    rotate: 0deg;
+    translate: 0% 0%;
+}
+40%{
+    scale: -1 1 1;
+    rotate: 0deg;
+    translate: 0% 0%;
+}
+
+100%
+{  
+    scale: -1 1 1 ;
+    rotate: 180deg;
+    translate: 90% 200%;
+}
+
+}
+
+
+
+

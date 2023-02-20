@@ -11,12 +11,22 @@ const option={
     }
 }
 
-async function getJokes(url) {
-    let response = await fetch(url,option);
-    let data = await response.json();
-    console.log(data);
-    return data;
-}
+async function getJokes(url) 
+{
+        try
+        {
+            let response = await fetch(url,option);
+            let data = await response.json();
+            console.log(data);
+            return data;
+        }
+        catch(err)
+        {
+            console.log(err)
+        }
+
+ }
+
  
 
 
