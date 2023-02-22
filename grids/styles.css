@@ -1,0 +1,41 @@
+body
+{
+   
+    margin: 0px;
+    padding:0px;
+    font-family:sans-serif
+}
+.box1,.box5
+{
+    background: #607d8b;
+}
+.box2 ,.box6
+{
+    background: #ad0b42;
+}
+.box3,.box7
+{
+    background: #3e6f04;
+}
+.box4,.box8
+{
+    background: #040b31;
+}
+.hero div
+{
+    padding: 5px;
+}
+h1
+{
+    color : #fff
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-row-gap:5px ;
+}
+.box1
+{
+    grid-area: 2/1/span 2/span 2;
+}

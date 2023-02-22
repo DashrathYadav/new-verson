@@ -94,9 +94,10 @@ neutral.onclick=()=>{
 
 btn.onclick=()=>{
 
+    
     btn.style.visibility="hidden";
     options.style.visibility="hidden";
-
+    
     setTimeout(()=>{
      
         form.append(h1);
@@ -112,6 +113,7 @@ btn.onclick=()=>{
 
     form.classList.add("animation")
     setTimeout(()=>{
+
         form.classList.remove("animation")
         form.style.visibility="hidden";
     },4000)
