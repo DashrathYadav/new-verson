@@ -1,0 +1,88 @@
+/* <-=====================Root css ====================-> */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    
+ 
+
+}
+
+/* <================  BODY CSS  ======================> */
+body {
+    /* background: #080808; */
+    height: 100vh;
+    color:#fff;
+    background-image: url("images/background.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+   
+}
+
+
+/* <================  header container  ======================> */
+.container{
+    margin-top: 5px;
+}
+
+
+
+/* <================  nav-bar  ======================> */
+.nav-bar{
+    /* background-color: white; */
+    display: flex;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+
+/* <================  navbar logo img ======================> */
+.nav-bar .logo img{
+    width: 100px;
+}
+
+
+
+/* <================ navbar ul ======================> */
+.nav-bar .menu ul{
+    display: flex;
+    
+}
+
+.nav-bar .menu ul li{
+    margin: 0 25px;
+}
+
+/* <================ nab bar  ul a  ======================> */
+.nav-bar .menu ul a{
+    color: #fff;
+
+    padding: 10px 0px;
+     transition: all .2s linear;
+}
+
+.nav-bar .menu ul a::after{
+    transition: all .5s linear ;
+    content: "";
+    display: block;
+    align-items: center;
+    height: 2px;
+    background-color: #dd092c;
+    width:0;
+
+}
+
+.nav-bar .menu ul a:hover:after
+{
+   
+    width: 100%;
+}
+

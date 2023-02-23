@@ -1,0 +1,36 @@
+.spam{
+    font-size: large;
+    color: red;
+    background-color: green;
+    height: 150px;
+     transition: all 14s;
+
+   
+}
+.spam::after{
+    height: inherit;
+    
+    background-color: blue;
+ 
+    content: "";
+    color: pink;
+    font-size: large;
+    display: block;
+    height: 50px;
+    width: 100%;
+    transition:  all 14s;
+   
+}
+.spam::after::after
+{
+    background-color: yellow;
+    content: "apple";
+    color: pink;
+    font-size: large;
+    display: block;
+    height: 50px;
+    width: 100%;
+
+    /* height: 10px; */
+    
+}
