@@ -73,6 +73,40 @@ exp.onclick=()=>{
 
 
 
-// --------------------------------------------Handling underline of tab ------------------------------------------------------------->
-// Handling underline of tab
+// --------------------------------------------Handling hover of work ------------------------------------------------------------->
 
+let work1=document.getElementById("workd1")
+let work2=document.getElementById("workd2")
+let work3=document.getElementById("workd3")
+let work_1=document.getElementById("work-1")
+let work_2=document.getElementById("work-2")
+let work_3=document.getElementById("work-3")
+
+work_1.onmouseover=()=>{
+    work1.style.bottom="25%"
+
+}
+work_1.onmouseout=()=>{
+    work1.style.bottom="-50%"
+
+}
+
+
+work_2.onmouseover=()=>{
+    work2.style.bottom="25%"
+
+}
+work_2.onmouseout=()=>{
+    work2.style.bottom="-50%"
+
+}
+
+
+work_3.onmouseover=()=>{
+    work3.style.bottom="25%"
+
+}
+work_3.onmouseout=()=>{
+    work3.style.bottom="-50%"
+
+}
