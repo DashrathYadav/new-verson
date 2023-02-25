@@ -1,36 +1,383 @@
-.spam{
-    font-size: large;
-    color: red;
-    background-color: green;
-    height: 150px;
-     transition: all 14s;
-
-   
+/* <-=====================Root css ====================-> */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-.spam::after{
-    height: inherit;
-    
-    background-color: blue;
- 
+
+/* <================  BODY CSS  ======================> */
+body,html{
+    background: #080808;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* position: relative; */
+
+}
+
+
+/* <================  header container  ======================> */
+.container {
+    margin-top: 5px;
+}
+
+
+
+/* <================  nav-bar  ======================> */
+.nav-bar {
+    /* background-color: white; */
+    display: flex;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+
+/* <================  navbar logo img ======================> */
+.nav-bar .logo img {
+    width: 100px;
+}
+
+
+
+/* <================ navbar ul ======================> */
+.nav-bar .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav-bar .menu ul li {
+    margin: 0 25px;
+}
+
+/* <================ navbar  ul a  ======================> */
+.nav-bar .menu ul a {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: medium;
+    padding: 10px 0px;
+    transition: all .2s linear;
+}
+
+.nav-bar .menu ul a::after {
+    transition: all .5s linear;
     content: "";
-    color: pink;
-    font-size: large;
     display: block;
-    height: 50px;
-    width: 100%;
-    transition:  all 14s;
-   
-}
-.spam::after::after
-{
-    background-color: yellow;
-    content: "apple";
-    color: pink;
-    font-size: large;
-    display: block;
-    height: 50px;
-    width: 100%;
+    align-items: center;
+    height: 2px;
+    background-color: #dd092c;
+    width: 0;
 
-    /* height: 10px; */
+}
+
+.nav-bar .menu ul a:hover:after {
+    
+    width: 100%;
+}
+
+
+
+
+
+/* <================ navbar  menu ul close  ======================> */
+.nav-bar .menu ul .close {
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+
+
+
+/* <================ navbar hamburger ======================> */
+.nav-bar .hamburger {
+    line-height: 6px;
+    margin-bottom: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* <================ introduction ======================> */
+.introduction{
+    /* background-color: red; */
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin-top: 20%;
+    margin-left: 10%;
+    line-height: 40px;
+    height: 70%
+}
+
+/* <================ introduction span ======================> */
+.introduction span{
+   
+    font-size: 30px;
+    font-weight: bolder;
+ 
+}
+
+/* <================ introduction span name ======================> */
+.introduction #name{
+    color: #dd092c;
+}
+
+
+/*/* <================    about   ======================> */
+.about
+{
+    /* height:100px; */
+    background-color:  #080808;;
+    margin: 0 auto 0 auto;
+    padding: 20px 0;
+    width:90%;
+       
+    color: whitesmoke;
     
 }
+
+
+
+/* <================    about about-me   ======================> */
+.about .about-me{
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+
+    
+}
+
+
+/* <================    about about-me my-img  ======================> */
+.about .about-me .my-img {
+
+    /* align-self: center; */
+    justify-self: center;
+    /* background-color: #dd092c; */
+    margin: 15px;
+
+}
+
+/* <================  about about-me my-img img  ======================> */
+.about .about-me .my-img img{
+
+    width:400px;
+    border-radius: 15px;
+}
+
+
+/* <================    about about-me  about-text  ======================> */
+.about .about-me .aboutme-text
+{
+    justify-self: center;
+
+    margin:15px;
+    padding: 10px 30px 0px 10px;
+}
+
+
+/* <================    about about-me  about-text about-title  ======================> */
+.about .about-me .aboutme-text .aboutme-title
+{
+     font-size: 40px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     display: inline-block;
+     color: white;
+     
+    }
+
+
+
+    /* <================    about about-me  about-text aboutme-content  ======================> */
+.about .about-me .aboutme-text .aboutme-content
+{
+    font-family: cursive;
+    word-spacing: 5px;
+    line-height: 29px;
+    opacity: .9;
+}
+
+
+/* <================    about about-me  info-title-container  ======================> */
+.about .about-me .aboutme-text .info-title-container{
+    padding: 25px 0px ;
+}
+
+
+
+/* <================    about about-me  about-text  info-title-container ul  ======================> */
+.about .about-me .aboutme-text .info-title-container ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-between;
+  
+}
+
+
+/* <================    about about-me  about-text  info-title-container ul span ======================> */
+.about .about-me .aboutme-text .info-title-container ul span{
+    color:white;
+    transition: .5s ease;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+
+    
+}
+
+.about .about-me .aboutme-text .info-title-container ul span:hover{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.about .about-me .aboutme-text .info-title-container ul span::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    padding: 0;
+    background-color: #dd092c;
+    transition: all .3s;
+}
+
+.about .about-me .aboutme-text .info-title-container ul span:hover::after{
+    width: 100%;
+}
+
+
+/* <================    about about-me  about-text  info-sect ======================> */
+.about .about-me .aboutme-text .info-sect{
+    font-size: small;
+
+}
+
+
+
+/* <================    about about-me  about-text  info-sect  p ======================> */
+.about .about-me .aboutme-text .info-sect p{
+    color:#dd092c;
+    padding-bottom: 5px;
+    
+}
+
+
+/* <================    class created to hide  skill education and  expericene tab ======================> */
+
+.display{
+    display: none;
+}
+
+
+
+
+/* <================ screen size 1100px  ======================> */
+@media only screen and (max-width:1100px) {
+
+    .about{
+        width: 100%;
+    }
+
+    .about .about-me{
+        
+        display: grid;
+        grid-template-columns: 1fr ;     
+    }
+
+    .about .about-me .aboutme-text{
+        background-color: #080808
+    }
+
+    .about .about-me .aboutme-text .info-title-container ul span{
+       
+      margin: 15px;
+        
+
+    }
+ 
+}
+
+
+
+
+/* <================ screen size 1000px  ======================> */
+@media only screen and (max-width:1000px) {
+/* <-------------   nav bar ---------------------------------------> */
+    .nav-bar {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* <================ screen size 900px  ======================> */
+@media only screen and (max-width:900px) {
+    .nav-bar .hamburger {
+        display: block;
+
+    }
+
+    /* <------------  nav menu --------------------------------> */
+    .nav-bar .menu {
+        width: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #f3093c;
+        transition: all .5s;
+        overflow: hidden;
+
+    }
+
+    /* <----------------  nav-bar active  -------------------------> */
+    .nav-bar .active {
+        width: 50%;
+    }
+
+
+    /* <--------------  nav-bar menu ul ------------------------>  */
+    .nav-bar .menu ul {
+        transition: all .5s;
+        margin: 0 auto auto 0;
+        padding: 0;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+/* <---------------- nav-bar menu  ul close -----------------------> */
+    .nav-bar .menu ul .close{
+        display: block;
+    }
+
+
+    /* <------------------    nav-bar menu  ul a -------------------------> */
+    .nav-bar .menu ul a {
+        letter-spacing: 1px;
+    }
+
+
+}
+
+
