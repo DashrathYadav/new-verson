@@ -104,12 +104,6 @@ btn.onclick=()=>{
     },500)
 
 
-    // form.classList.add("flip")
-    // console.log("button Clicked")
-
-    // setTimeout(()=>{
-    //     form.classList.add("thankyou");
-    // },1000)
 
     form.classList.add("animation")
     setTimeout(()=>{

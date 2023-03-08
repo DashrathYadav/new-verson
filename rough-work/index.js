@@ -1,7 +1,6 @@
 console.log("Js file up Running")
 
-
-
+// import  {feedback} from "./feedback"
 
 // ------------------------------------------------  Handling Hamburger toggle---------------------------------------------------->
 let menu=document.getElementById("menu")
@@ -110,3 +109,39 @@ work_3.onmouseout=()=>{
     work3.style.bottom="-50%"
 
 }
+
+//  ===========================    google sheet setup   ========================================================>
+
+
+ const gs_url=`https://script.google.com/macros/s/AKfycbzC1EOASZ58x-ZryNyIpCiG4fdGwZB0YQz-GoVTEmnLni8gMQJFFIV4BlEFPGoZ83ltRA/exec`
+
+
+const scriptURL = gs_url
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+//   =================   feed Back of submit ==========================>
+
+let submit=document.getElementById("submit")
+let Form=document.getElementById("form")
+let feed=document.getElementById("feed")
+Form.onsubmit=(e)=>{
+
+ Form.style.display="none"
+ feed.style.display="flex"
+
+}
+
+submit.onclick=()=>{
+    e.preventDefault();
+    Form.style.display="none"
+    feed.style.display="flex"
+}
+

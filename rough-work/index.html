@@ -29,11 +29,11 @@
                 <div class="menu " id="menu">
                     <ul>
                         <li class="close" id="close">X</li>
-                        <li><a href="" class="Home">Home</a></li>
+                        <li><a href="" class="#">Home</a></li>
                         <li><a href="#about" class="About">About</a></li>
-                        <li><a href="" class="Services">Services</a></li>
-                        <li><a href="" class="Protfolio">Protfolio</a></li>
-                        <li><a href="" class="Contact">Contact</a></li>
+                        <li><a href="#Myservices" class="Services">Services</a></li>
+                        <li><a href="#Mywork" class="Protfolio">Protfolio</a></li>
+                        <li><a href="#contact" class="Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="hamburger" id="hamburger">
@@ -48,7 +48,7 @@
     <div class="introduction">
         <p>UI/UX Designer</p>
         <span> Hi, I'm </span>
-        <span id="name">Kevin</span>
+        <span id="name">Dashrath</span>
         <br>
         <span>Jen from Australia</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="about" id="about">
         <div class="about-me">
             <div class="my-img">
-                <img src="images/user.png" alt="">
+                <img src="images/foreground.png" alt="">
             </div>
             <div class="aboutme-text">
                 <span class="aboutme-title">About Me</span>
@@ -241,23 +241,99 @@
     <!-- ================================  Contact me =============================================================> -->
     <div id="contact">
         <div class="container">
-            <div class="content" >
+            <div class="content">
                 <div class="contact-side">
-                    <span class="aboutme-title">Contact Me</span><br><br>
+                    <span class=" contact-me-title aboutme-title">Contact Me</span>
                     <div class="mail-div">
-                        
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>contact@gmail.com</span>
                     </div>
-                    <div class="phone-no-div"></div>
-                    <div class="social-media"></div>
-                    <div class="download" id="download"></div>
+                    <div class="phone-no-div">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <span> 9021345678</span>
+                    </div>
+                    <div class="social-media" id="social">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="download">
+                        <Button id="download-btn " class="download-btn">Download CV</Button>
+                    </div>
 
                 </div>
-                <div class="form-side"></div>
+
+                <div class="form-side" id="form-side">
+
+                    <form id="form" name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="off" spellcheck="false" required>
+                        <input type="text" name="Email" placeholder="Your Email" autocomplete="off" spellcheck="false" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
+                            spellcheck="false"></textarea>
+                        <button type="submit" class="download-btn" id="submit">Submit </button>
+                    </form>
+                    <!-- --------------------------  feedback html start -------------------------------------------- -->
+
+                    <feed id="feed">
+                        <div class="outer  color uh n h " id="outer">
+                            <div class="form1" id="form1">
+                                <div>
+                                    <h3 id="heading"> experience</h3>
+                                </div>
+                                <div class="optinos" id="optinos">
+
+                                    <div class="icon sad" id="sad">
+                                        <img class="feed-img"
+                                            src="https://cdn-icons-png.flaticon.com/128/6715/6715965.png"
+                                            alt="unsatisfied">
+                                        <p></p>
+                                    </div>
+
+                                    <div class="icon neutral" id="neutral">
+                                        <img class="feed-img"
+                                            src="https://cdn-icons-png.flaticon.com/128/1791/1791308.png" alt="OK OK">
+                                        <p></p>
+                                    </div>
+
+                                    <div class="icon happy" id="happy">
+                                        <img class="feed-img"
+                                            src="https://cdn-icons-png.flaticon.com/128/3129/3129282.png"
+                                            alt="unsatisfied">
+                                        <p></p>
+                                    </div>
+
+
+                                </div>
+
+                                <div>
+                                    <button id="btn"> Send Review</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </feed>
+
+                </div>
+
+                <!-- --------------------------  feedback html end-------------------------------------------- -->
             </div>
         </div>
 
     </div>
+    <footer>
+        <div>
+            <span> Copyright @ Sandy. Made with <i class="fa-regular fa-heart"></i> by we all </span>
+        </div>
+    </footer>
+
+    <a id="pin" href="#"><i class="fa-sharp fa-solid fa-circle-up fa-2x"></i></a>
+
     <script src="index.js"></script>
+    <script src="feedback.js"></script>
 </body>
 
 </html>
